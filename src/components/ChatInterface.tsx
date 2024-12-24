@@ -37,8 +37,8 @@ const ChatInterface = () => {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto">
-      <div className="bg-black/50 rounded-lg p-4 h-[400px] overflow-y-auto mb-4 border border-matrix-primary/30">
+    <div className="w-full max-w-2xl mx-auto h-full flex flex-col">
+      <div className="flex-1 bg-black/50 rounded-lg p-4 overflow-y-auto mb-4 border border-matrix-primary/30 min-h-[200px]">
         {messages.map((message, index) => (
           <div
             key={index}
